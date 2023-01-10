@@ -1,0 +1,31 @@
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    &.red{
+        background-color: red;
+
+        &::after{
+            content: 'delay';
+            display: block;
+            width: 90px;
+            position: absolute;
+            left: 25px;
+            top: -5px;
+        }
+    }
+
+    &.green{
+        background-color: green;
+
+        &::after{
+            content: 'in time';
+            display: block;
+            width: 90px;
+            position: absolute;
+            left: 25px;
+            top: -5px;
+        }
+    }
+}
